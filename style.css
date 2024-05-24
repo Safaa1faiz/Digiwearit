@@ -2,7 +2,7 @@
 .navbar-nav {
     justify-content: center;
     width: 100%;
-    color: black;
+    padding-bottom: 2px;
 }
 .navbar-custom-line {
     width: 100%;
@@ -15,11 +15,12 @@
     align-items: center;
     font-size: 24px;
 }
+
 .centered-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; /* Cela assure que le conteneur est centré verticalement sur la page */
+    height: 100vh; /* Cela assure que le conteneur est centré verticalement sur la page */
   }
   
   .container {
@@ -28,26 +29,158 @@
     grid-auto-columns: minmax(min-content, max-content);
   }
   
-  .col {
-
-    padding: 20px;
+  .card {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Centers the content horizontally */
+    text-align: start; /* Centers the content vertically */
+    gap: 20px; /* Adjust the gap between elements */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
   }
   
+  
   .images_card {
-    display: grid;
-  }
-
-  .images_card img{
-    width: 200px;
-  }
-
-  .centered-container .container{ 
     display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Centers images horizontally */
+    gap: 30px; /* Adjust the gap between images */
+    margin-right: 30px;
+    
   }
-
+  .images_card img {
+    width: 80px;
+    border: 1px solid rgb(83, 83, 83); /* Adds a border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+    border-radius: 10px;
+    
+  }
+  .centered-container .container { 
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+  }
   .card_contanet{
-    width: 30%;
+    width: 20rem;
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
+
+  span.navbar {
+    display: block;
+}
+.navbar-nav .nav-item .nav-link {
+  color: rgb(92, 90, 90); /* Change la couleur du texte en noir */
+  margin-top: 0;
+
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: black; /* Assurez-vous que l'élément actif est aussi noir */
+  font-family: 'Poppins', sans-serif;
+}
+hr.stylise {
+  border: 0;
+  height: 2px;
+  background-color: #000;
+}
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid rgb(83, 83, 83); /* Add a border */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a shadow */
+}
+.red {
+  background-color: rgb(156, 53, 53);
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+
+.btn-group {
+  display: flex;
+}
+
+
+#btn1,
+#btn2,
+#btn3 {
+  border: 1px solid black; /* Bord noir */
+  border-radius: 5px; /* Rayon de bordure */
+  background-color: white; /* Couleur de fond blanche */
+  margin-right: 10px; /* Espacement entre les boutons */
+  color: black; /* Couleur du texte en noir */
+}
+
+/* Appliquer les styles pour les boutons de petite taille */
+.btn-group .btn.btn-sm {
+  padding: 8px 10px; /* Ajustez les valeurs pour une taille plus petite */
+  font-size: 10px; /* Ajustez la taille de la police pour une taille plus petite */
+}
+
+
+.another-btn-group {
+  display: flex;
+  margin-bottom: 10px; /* Ajouter un espacement entre les deux groupes de boutons */
+  margin-top: 20px;
+}
+
+.another-btn-group .btn {
+  border-radius: 20px; /* Rayon de bordure */
+  background-color: rgb(0, 47, 255); /* Couleur de fond blanche */
+  margin-right: 10px; /* Espacement entre les boutons */
+}
+
+/* Appliquer les styles pour les boutons de petite taille */
+.another-btn-group .btn.btn-sm {
+  padding: 8px 10px; /* Ajustez les valeurs pour une taille plus petite */
+  padding-top: 5px;
+  font-size: 6px; /* Ajustez la taille de la police pour une taille plus petite */
+}
+
+
+.link {
+  margin-top: 10px; /* Espacement par rapport aux éléments précédents */
+  display: flex; /* Utilisation de Flexbox */
+
+  align-items: start; /* Centrer les éléments horizontalement */
+}
+
+.link a {
+  text-decoration: none; /* Suppression du soulignement du lien */
+  color: blue; /* Couleur du texte du lien */
+}
+
+.link span {
+  color: gray; /* Couleur du texte supplémentaire */
+  font-size: 14px; /* Taille de la police pour le texte supplémentaire */
+  margin-top: 5px; /* Espacement par rapport au lien */
+}
+
+.image-container {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+}
+
+.image-container img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navbar-1 {
+  background-color: rgba(44, 147, 216, 0.836); /* Set background color to blue */
+  color: white; /* Set text color to white */
+  font-family: 'Poppins', sans-serif; /* Set font family to Poppins */
+  padding: 4px 6px; /* Optional: Add padding to increase clickable area */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  font-size: 13px;
+  width: 180px; 
+  height: 25px;
+}

@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-8r4go0gcwHKh3Un3xNxvn0w1ebWtPtjZZgL8T5gvSGFb5qQUrrfjMQuC4J4zgwcv" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light flex-column">
+    <nav class="navbar navbar-expand-lg navbar-white bg-white flex-column">
         <div class="container">
             <a class="navbar-brand" href="#">Save 20% for your first contacts order</a>
             <div class="logo">
@@ -27,44 +29,71 @@
             <i class="far fa-heart"></i>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light flex-column">
+    <span class="navbar navbar-expand-lg navbar-white bg-white flex-column">
         <div class="container">
             <div class="navbar-custom-line">
                 <div class="collapse navbar-collapse mt-2" id="navbarText">
-                  <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home try one<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Eyeglasses</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Sunglasses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Accessories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Get a prescription</a>
-                    </li>
-                  </ul>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home try one<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Eyeglasses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sunglasses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Get a prescription</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
         </div>
-    </nav>
+    </span>
+    
     <div class="centered-container">
         <div class="container">
             <div class="images_card">
                 <img src="/images/img1.jpg" alt="Image 1">
-                <img src="/images/img1.jpg" alt="Image 1">
-                <img src="/images/img1.jpg" alt="Image 1">
+                <img src="/images/image2.jpeg" alt="Image 1">
+                <img src="/images/images(8).jpeg" alt="Image 1">
                 <img src="/images/img1.jpg" alt="Image 1">
             </div>
             <div class="col">
                 <img src="/images/img1.jpg" alt="Image 1">
             </div>
-            <div class="card_contanet">
-              Contenu de la deuxième colonne
-            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="image-container">
+                        <img src="/images/logo.png" alt="Image 1">
+                      </div>
+                      <div class="navbar-1">
+                        Save 50% on two Rx pairs
+                      </div>
+                  <p class="card-text">Starting at $95 with prescription lenses</p>
+                  <hr>
+                  <p>Violet Magnolia</p>
+                  <div class="color-circle red"></div>
+                  <div class="color-circle green"></div>
+                  <div class="color-circle blue"></div>
+                  <div class="btn-group">
+                    <button type="button" id="btn1" class="btn btn-primary btn-sm">Medieum</button>
+                    <button type="button" id="btn2" class="btn btn-primary btn-sm">Wide</button>
+                    <button type="button" id="btn3" class="btn btn-primary btn-sm">Width guide</button>
+                  </div>
+                  <div class="another-btn-group"> 
+                    <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Select lenses and buy</button>
+                    <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Try at home for free</button>     
+                </div>
+                <div class="link">
+                    <a href="https://votre-blog.com/article">Find a store near</a> <p>(eye exams available)</p>
+                  </div>
+              </div>
+              </div>
         </div>
     </div>
       
