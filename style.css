@@ -8,15 +8,17 @@
 }
 
 .modal-wrapper {
-  background-color: #007bff;/* Adjust the color as needed */
+  background-color: #007bff; /* Adjust the color as needed */
   border-radius: 10px;
   padding: 20px;
-  margin: 20px;
+  margin: 20px auto; /* Center the modal wrapper */
+  width: 675px; /* Adjust the width as needed */
+  height: 469px; /* Adjust the height as needed */
+
 }
 
 .modal-body {
   color:#f0f3f7; 
-  background-color: #ebf1f7;/* Adjust the color as needed */
 }
 
 .modal-dialog {
@@ -34,5 +36,26 @@
 
 .modal-content {
   border-radius: 15px;
+  background-color: #ebf1f7;/* Adjust the color as needed */
+
   overflow: hidden;
 }
+
+
+.modal-header {
+  background-color: transparent; /* Ensures the header background is transparent */
+  border-bottom: none; /* Removes the border line if present */
+}
+
+.close {
+  color: #000; /* Adjust the color as needed */
+  opacity: 1; /* Ensures the button is fully visible */
+}
+.bottom-left-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Adjust the size as needed */
+}
+
+
