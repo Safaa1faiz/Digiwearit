@@ -187,5 +187,116 @@ hr.stylise {
 
 /* ///////////////////////////////////////CSS MODAL2////////////////////////////////////*/
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Your existing CSS rules */
+* {
+  font-family: 'Poppins', sans-serif; /* Set Poppins as the font for all elements */
+
+}
+.modal-body p.modal-body label {
+  margin-top: 10px; /* Adds space above each paragraph */
+  margin-bottom: 10px; /* Adds space below each paragraph */
+  font-size: 11px; /* Set font size to 11px */
+  line-height: 18.59px; /* Set line height to 18.59px */
+}
+
+.modal-body h2 {
+  margin-top: 20px; /* Adds space above the heading */
+  margin-bottom: 20px; /* Adds space below the heading */
+  font-size: 24px; /* Adjust the font size as needed */
+}
+
+.modal-body h3, .modal-body strong {
+  margin-top: 15px; /* Adds space above the heading */
+  margin-bottom: 15px; /* Adds space below the heading */
+  font-size: 18px; /* Adjust the font size as needed */
+}
+.modal-logo {
+  width: 100px; /* Adjust the size as needed */
+  margin-right: auto;
+}
+
+.modal-body {
+  padding: 0;
+  position: relative; /* This makes child absolute positioning relative to this container */
+  color: #f0f3f7;
+ 
+}
+
+
+/* Adjust the font size and line height for better readability */
+
+
+/* Add margins to the paragraphs and headings */
+
+
+
+
+/* Adjust the button styling */
+
+
+.modal-wrapper {
+  background-color: #037EF3; /* Adjust the color as needed */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px auto 100px auto; /* Center the modal wrapper */
+  width: 800px; /* Adjust the width as needed */
+  height: 469px; /* Adjust the height as needed */
+  position: relative; /* Ensure this is positioned relative for stacking context */
+  z-index: 2; /* Higher z-index to be above the image */
+  
+}
+
+
+.modal-dialog {
+  max-width: 1000px; /* Increased width */
+}
+
+.form-check-label {
+  margin-left: 10px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.text-left p {
+  margin-top: 10px; /* Adds space above each paragraph */
+  margin-bottom: 10px; /* Adds space below each paragraph */
+}
+.modal-content {
+  border-radius: 15px;
+  background-color: #ebf1f7;/* Adjust the color as needed */
+
+  overflow: hidden;
+}
+
+
+.modal-header {
+  background-color: transparent; /* Ensures the header background is transparent */
+  border-bottom: none; /* Removes the border line if present */
+}
+
+.close {
+  color: #000; /* Adjust the color as needed */
+  opacity: 1; /* Ensures the button is fully visible */
+  width: fit-content;
+}
+.bottom-left-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Adjust the size as needed */
+  z-index: 1; /* Lower z-index to be behind the modal wrapper */
+}
+.top-right-image {
+  position: absolute;
+  top: -56PX;
+  right: 5PX;
+  z-index: 1; /* Lower z-index to be behind the modal wrapper */
+}
+
 
 
