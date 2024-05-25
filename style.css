@@ -204,7 +204,7 @@ hr.stylise {
 .modal-body h2 {
   margin-top: 20px; /* Adds space above the heading */
   margin-bottom: 20px; /* Adds space below the heading */
-  font-size: 24px; /* Adjust the font size as needed */
+  font-size: 19px; /* Adjust the font size as needed */
 }
 
 .modal-body h3, .modal-body strong {
@@ -237,7 +237,7 @@ hr.stylise {
 
 
 .modal-wrapper {
-  background-color: #037EF3; /* Adjust the color as needed */
+  background-color: #000000; /* Adjust the color as needed */
   border-radius: 10px;
   padding: 20px;
   margin: 40px auto 100px auto; /* Center the modal wrapper */
@@ -320,5 +320,77 @@ hr.stylise {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for the modal */
   padding: 20px; /* Padding inside the modal */
   border-radius: 10px; /* Rounded corners */
+  margin-bottom: 40px;
 }
+
+.modal-logo {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%;
+  height: 70px; /* Adjust height as needed */
+  position: relative;
+}
+
+.centered-image {
+  max-width: 100px; /* Adjust the size of the image */
+  margin: 20px;
+  position: absolute; /* Position absolute within the modal-logo div */
+}
+
+
+
+.form-check-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-check span {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.reload-button {
+  background-color: white;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 10px 20px; /* Ajustez la taille du padding pour le rendre plus petit */
+  cursor: pointer;
+  font-size: 14px; /* Ajustez la taille de la police */
+  transition: background-color 0.3s, color 0.3s;
+  display: block;
+  margin: 0 auto; /* Centrer le bouton horizontalement */
+}
+
+.reload-button:hover {
+  background-color: #000;
+  color: white;
+}
+
+
+.modal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.enlarged {
+  width: 200px; /* Remplacez cette valeur par la taille souhaitée */
+  height: auto; /* Cela permet de maintenir les proportions de l'image */
+  margin-top: 300px;
+}
+
+
+
+
+
 

@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -25,57 +27,42 @@
         </button>
       </div>
       <div class="modal-body">
-        <div class="modal-logo">
-          <img src="images/Calque.png" alt="Company Logo" style="position: absolute; top: 0px; left: 50px; margin: 20px;">
-        </div>
-        
-            <div class="modal-container">
+
+                    <div class="modal-container">
+                        <div class="modal-wrapper text-center">   
+                            <img src="images/Capture.PNG" alt="Company Logo" class="centered-image enlarged">
+                        </div>
                 <div class="modal-wrapper text-center">
                   <div class="content-wrapper">
-                    <h2>Our<span style="color:#FF7BDA;"> Privacy Promise </span>to you</h2>
-                    <p>To access this service, you must be at least 18 years old.</p>
-                    <div class="text-left" style="justify-content: space-between;">
-                      <div>
-                        <p>L'Oreal USA, Inc. ("L'Oreal", "We", or "Us") allows you to virtually try on selected products through a virtual try-on feature. If you select to use the live camera or upload a photo, your image is processed to provide you with the virtual try-on feature consistent with this consent.</p>
-                        <span><strong>Privacy Notice</strong></span>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="consentFaceScan1">
-                        <label class="form-check-label" for="consentFaceScan1">
-                          I consent to the scanning of my face and the processing of my image as described in the Virtual Try-On Information Notice and agree to all its terms, including as regards use and transfer.
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="consentTermsOfUse1">
-                        <label class="form-check-label" for="consentTermsOfUse1">
-                          I am a US resident, 18+, and agree to the Terms Of Use (which include an arbitration provision to resolve disputes) and all terms set forth therein.
-                        </label>
-                      </div>
+                    <div class="modal-logo">
+                        <img src="images/Calque.png" alt="Company Logo" class="centered-image">
                     </div>
-                  </div>
-                </div>
-              
-                <div class="modal-wrapper text-center">
-                  <div class="content-wrapper">
-                    <h2>Our<span style="color:#FF7BDA;"> Privacy Promise </span>to you</h2>
-                    <p>To access this service, you must be at least 18 years old.</p>
-                    <div class="text-left" style="justify-content: space-between;">
+                    <h2>Hmmm,<span style="color:#327cb8;"> we can't access </span>your camera</h2>
+                    <div class="text-left" style="text-align: center;">
                       <div>
-                        <p>L'Oreal USA, Inc. ("L'Oreal", "We", or "Us") allows you to virtually try on selected products through a virtual try-on feature. If you select to use the live camera or upload a photo, your image is processed to provide you with the virtual try-on feature consistent with this consent.</p>
-                        <span><strong>Privacy Notice</strong></span>
+                        <p style="margin-left: 20px;">Let’s fix that so you can use Virtual Try-On. Take the steps below, and reload this page to try again.</p>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="consentFaceScan2">
-                        <label class="form-check-label" for="consentFaceScan2">
-                          I consent to the scanning of my face and the processing of my image as described in the Virtual Try-On Information Notice and agree to all its terms, including as regards use and transfer.
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="consentTermsOfUse2">
-                        <label class="form-check-label" for="consentTermsOfUse2">
-                          I am a US resident, 18+, and agree to the Terms Of Use (which include an arbitration provision to resolve disputes) and all terms set forth therein.
-                        </label>
-                      </div>
+                      <div class="form-check-group">
+                        <div class="form-check">
+                            <span>
+                                <i class="fa-solid fa-check" style="color: #FFD43B;"></i>
+                            </span>
+                            <label>Click on the three-dot icon in the top right corner of the browser window and select settings in the dropdown.</label>
+                        </div>
+                        <div class="form-check">
+                            <span>
+                                <i class="fa-solid fa-check" style="color: #FFD43B;"></i>
+                            </span>
+                            <label>Click PRIVACY AND SECURITY > SITE SETTINGS > CAMERA OR MICROPHONE.</label>
+                        </div>
+                        <div class="form-check">
+                            <span>
+                                <i class="fa-solid fa-check" style="color: #FFD43B;"></i>
+                            </span>
+                            <label>To allow camera access for a site you’ve previously blocked: Scroll down to ‘’Not allowed to use your camera‘’, select warbyparker.com, and change the camera or microphone to ‘’Allow’’.</label>
+                        </div>
+                        <button class="reload-button" onclick="window.location.reload();">Reload</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -83,7 +70,7 @@
               
           
               <div class="form-check">
-                <button type="button" class="btn mt-4" style="background-color: transparent; border: 1px solid white; border-radius: 35px; color: white; width: 150px;" for="consentCheck">I consent. </button>
+                <!-- <button type="button" class="btn mt-4" style="background-color: transparent; border: 1px solid white; border-radius: 35px; color: white; width: 150px;" for="consentCheck">I consent. </button> -->
               </div>
             </div>
           </div>
