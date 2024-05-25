@@ -108,4 +108,7 @@
   right: 5PX;
   z-index: 1; /* Lower z-index to be behind the modal wrapper */
 }
+.modal-header{
+  z-index: 2; /* Lower z-index to be behind the modal wrapper */
 
+}
