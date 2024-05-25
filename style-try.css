@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Your existing CSS rules */
+* {
+  font-family: 'Poppins', sans-serif; /* Set Poppins as the font for all elements */
+
+}
+.modal-body p.modal-body label {
+  margin-top: 10px; /* Adds space above each paragraph */
+  margin-bottom: 10px; /* Adds space below each paragraph */
+  font-size: 11px; /* Set font size to 11px */
+  line-height: 18.59px; /* Set line height to 18.59px */
+}
+
+.modal-body h2 {
+  margin-top: 20px; /* Adds space above the heading */
+  margin-bottom: 20px; /* Adds space below the heading */
+  font-size: 24px; /* Adjust the font size as needed */
+}
+
+.modal-body h3, .modal-body strong {
+  margin-top: 15px; /* Adds space above the heading */
+  margin-bottom: 15px; /* Adds space below the heading */
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
+
+.modal-body {
+  color: #f0f3f7;
+  padding: 0;
+}
+
+
+
+.content-wrapper {
+  width: 50%; /* Take up the other half of the modal wrapper */
+  margin-left: 0; /* Remove margin-left as it's now unnecessary */
+  margin-right: 0; /* Remove margin-right as it's now unnecessary */
+  color: white; /* Optional: change text color for visibility on dark backgrounds */
+}
+
+
+/* Adjust the font size and line height for better readability */
+
+
+/* Add margins to the paragraphs and headings */
+
+
+
+.left-column {
+  background-color: black; /* Black background for the left column */
+}
+
+.content-wrapper {
+  width: 50%; /* Take up the other half of the modal wrapper */
+  margin-left: 0; /* Remove margin-left as it's now unnecessary */
+  margin-right: 0; /* Remove margin-right as it's now unnecessary */
+  color: white; /* Optional: change text color for visibility on dark backgrounds */
+}
+
+
+.modal-dialog {
+  max-width: 1000px; /* Increased width */
+}
+
+
+
+
+
+
+
+.modal-header {
+  background-color: transparent; /* Ensures the header background is transparent */
+  border-bottom: none; /* Removes the border line if present */
+}
+
+.close {
+  color: #000; /* Adjust the color as needed */
+  opacity: 1; /* Ensures the button is fully visible */
+  width: fit-content;
+}
+.bottom-left-image {
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Adjust the size as needed */
+  z-index: 1; /* Lower z-index to be behind the modal wrapper */
+}
+.top-right-image {
+  position: absolute;
+  top: -56PX;
+  right: 5PX;
+  z-index: 1; /* Lower z-index to be behind the modal wrapper */
+}
+.modal-header{
+  z-index: 2; /* Lower z-index to be behind the modal wrapper */
+
+}
+
+.col {
+  width: 50%; /* Set each column to take up half of the container's width */
+}
+.col-right{
+  position: relative; /* This makes child absolute positioning relative to this container */
+  float: right;
+  padding: 0;
+
+}
+.col-left{
+float: left;
+background-color: black;
+
+}

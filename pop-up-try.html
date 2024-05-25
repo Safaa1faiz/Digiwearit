@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modal Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style-try.css">
+
+</head>
+<body>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Open Modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 1200px; overflow-y: auto;"> <!-- Increased modal width and added scroll -->
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="d-flex ">
+          <div class="flex-row float-left col col-left ">
+
+          </div>
+          <div class="flex-row float-right col col-right">
+            <div class="close-header">
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"  style="background-color: transparent;">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <h2>Our<span style="color:#FF7BDA;
+              ;"> Privacy Promise </span>to you</h2>
+            <p>To access this service, you must be at least 18 years old.</p>
+            <div class="text-left  " style="justify-content: space-between;">
+              <div>
+                <p>L'Oreal USA, Inc. ("L'Oreal", "We", or "Us") allows you to virtually try on selected products through a virtual try-on feature. If you select to use the live camera or upload a photo, your image is processed to provide you with the virtual try-on feature consistent with this consent. </p>
+                <span><strong>Privacy Notice</strong> </span>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="consentFaceScan">
+                <label class="form-check-label" for="consentFaceScan">
+                  I consent to the scanning of my face and the processing of my image as described in the Virtual Try-On Information Notice and agree to all its terms, including as regards use and transfer. 
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="consentTermsOfUse">
+                <label class="form-check-label" for="consentTermsOfUse">
+                  I am a US resident, 18+, and agree to the Terms Of Use (which include an arbitration provision to resolve disputes) and all terms set forth therein. 
+                </label>
+              </div>
+              <div class="form-check">
+                <button type="button" class="btn mt-4" style="background-color: transparent; border: 1px solid white; border-radius: 35px; color: white; width: 150px;" for="consentCheck">I consent. </button>
+              </div>
+            </div>
+            <div class="bottom-left-image">
+              <img src="images/left-image.png" alt="Decorative Image" >
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+</html>
