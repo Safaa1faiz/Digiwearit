@@ -79,17 +79,14 @@
   opacity: 1; /* Ensures the button is fully visible */
   width: fit-content;
 }
+
 .bottom-left-image {
-  position: absolute;
-  bottom: 0;
-  width: 100%; /* Adjust the size as needed */
-  z-index: 1; /* Lower z-index to be behind the modal wrapper */
-}
-.top-right-image {
-  position: absolute;
-  top: -56PX;
-  right: 5PX;
-  z-index: 1; /* Lower z-index to be behind the modal wrapper */
+  height: 786.4px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 105 deg;
+  background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, #FF29C3 100%);
+
 }
 .modal-header{
   z-index: 2; /* Lower z-index to be behind the modal wrapper */
@@ -103,6 +100,8 @@
   position: relative; /* This makes child absolute positioning relative to this container */
   float: right;
   padding: 0;
+  /* background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, #FF29C3 100%); */
+
 
 }
 .col-left{
