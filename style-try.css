@@ -25,19 +25,8 @@
 }
 
 
-.modal-body {
-  color: #f0f3f7;
-  padding: 0;
-}
 
 
-
-.content-wrapper {
-  width: 50%; /* Take up the other half of the modal wrapper */
-  margin-left: 0; /* Remove margin-left as it's now unnecessary */
-  margin-right: 0; /* Remove margin-right as it's now unnecessary */
-  color: white; /* Optional: change text color for visibility on dark backgrounds */
-}
 
 
 /* Adjust the font size and line height for better readability */
@@ -51,12 +40,6 @@
   background-color: black; /* Black background for the left column */
 }
 
-.content-wrapper {
-  width: 50%; /* Take up the other half of the modal wrapper */
-  margin-left: 0; /* Remove margin-left as it's now unnecessary */
-  margin-right: 0; /* Remove margin-right as it's now unnecessary */
-  color: white; /* Optional: change text color for visibility on dark backgrounds */
-}
 
 
 .modal-dialog {
@@ -100,6 +83,8 @@
   position: relative; /* This makes child absolute positioning relative to this container */
   float: right;
   padding: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   /* background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, #FF29C3 100%); */
 
 
@@ -107,5 +92,341 @@
 .col-left{
 float: left;
 background-color: black;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
 
+}
+
+
+/* Add your custom styles here */
+
+.modal-content {
+  border-radius: 15px; 
+}
+
+.close-header {
+  text-align: right;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.form-group {
+  margin: 15px 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.view-details {
+  text-align: right;
+}
+
+.view-details a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.view-details a:hover {
+  text-decoration: underline;
+}
+#modalcontainer{
+  padding: 20px;
+
+}
+#modalchild{
+  padding: 20px;
+  border-radius: 20px;
+border: 1px solid black;
+box-shadow: 2px 2px 5px black;
+}
+
+/* Additional styles to match the design */
+
+
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.color-options {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.color-dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+p {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-control {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+
+.button-group .btn {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.button-group .btn-primary {
+  background-color: #FF00FF;
+  border-color: #FF00FF;
+}
+
+.button-group .btn-outline-primary {
+  border-color: #000;
+  color: #000;
+}
+
+.view-details a {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.view-details a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for the left part of the modal */
+
+.left-content {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.logo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.camera-frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 2px dashed #fff;
+  margin-bottom: 20px;
+}
+
+.camera-frame .frame {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+}
+
+.camera-frame .frame:nth-child(1) {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.camera-frame .frame:nth-child(2) {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.camera-frame .frame:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+.camera-frame .frame:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.move-frame {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.move-frame p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons .btn {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.buttons .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.buttons .btn-outline-primary {
+  border-color: #fff;
+  color: #fff;
+}
+
+.buttons .btn-outline-primary i {
+  margin-right: 5px;
+}
+
+
+.col-left .left-content {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+
+}
+
+
+col-left .logo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.col-left .camera-frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 2px dashed #fff;
+  margin-bottom: 20px;
+}
+
+.col-left .camera-frame .frame {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+}
+
+.col-left .camera-frame .frame:nth-child(1) {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.col-left .camera-frame .frame:nth-child(2) {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.col-left .camera-frame .frame:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+.col-left .camera-frame .frame:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.col-left .move-frame {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.col-left .move-frame p {
+  margin: 0;
+font-size: 14px;
+}
+.col-left .buttons {
+display: flex;
+gap: 10px;
+}
+.col-left .buttons .btn {
+font-family: 'Arial', sans-serif;
+font-size: 16px;
+padding: 10px 20px;
+border-radius: 25px;
+}
+.col-left .buttons .btn-primary {
+background-color: #007bff;
+border-color: #007bff;
+}
+.col-left .buttons .btn-outline-primary {
+border-color: #fff;
+color: #fff;
+}
+.col-left .buttons .btn-outline-primary i {
+margin-right: 5px;
 }

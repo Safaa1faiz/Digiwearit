@@ -6,7 +6,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style-try.css">
-
 </head>
 <body>
 
@@ -17,47 +16,71 @@
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" style="max-width: 1200px; overflow-y: auto;"> <!-- Increased modal width and added scroll -->
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 1200px; overflow-y: auto;">
     <div class="modal-content">
-
-      <div class="modal-body">
-        <div class="d-flex ">
-          <div class="flex-row float-left col col-left ">
-
+      <div class="">
+        <div class="d-flex  ">
+          <div class="flex-row float-left col col-left  border-radius">
+            <div class="left-content">
+              <div class="d-flex justify-content-between">
+                <div class="logo">
+                  <img src="images/Calque.png" alt="Digiwearit Logo" style="float: left;">
+                </div>
+                <button type="button" class="btn btn-secondary" style="float: right;">Click Me</button>
+              </div>
+              <div class="camera-frame">
+                <div class="frame"></div>
+                <div class="frame"></div>
+                <div class="frame"></div>
+                <div class="frame"></div>
+              </div>
+              <div class="move-frame">
+                <p>Move into frame. (We can't see you)</p>
+              </div>
+              <div class="buttons">
+                <button type="button" class="btn btn-primary">Refit</button>
+                <button type="button" class="btn btn-outline-primary"><i class="fa fa-heart"></i></button>
+              </div>
+            </div>
           </div>
           <div class="flex-row float-right col col-right">
-            <div class="close-header">
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"  style="background-color: transparent;">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <h2>Our<span style="color:#FF7BDA;
-              ;"> Privacy Promise </span>to you</h2>
-            <p>To access this service, you must be at least 18 years old.</p>
-            <div class="text-left  " style="justify-content: space-between;">
-              <div>
-                <p>L'Oreal USA, Inc. ("L'Oreal", "We", or "Us") allows you to virtually try on selected products through a virtual try-on feature. If you select to use the live camera or upload a photo, your image is processed to provide you with the virtual try-on feature consistent with this consent. </p>
-                <span><strong>Privacy Notice</strong> </span>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="consentFaceScan">
-                <label class="form-check-label" for="consentFaceScan">
-                  I consent to the scanning of my face and the processing of my image as described in the Virtual Try-On Information Notice and agree to all its terms, including as regards use and transfer. 
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="consentTermsOfUse">
-                <label class="form-check-label" for="consentTermsOfUse">
-                  I am a US resident, 18+, and agree to the Terms Of Use (which include an arbitration provision to resolve disputes) and all terms set forth therein. 
-                </label>
-              </div>
-              <div class="form-check">
-                <button type="button" class="btn mt-4" style="background-color: transparent; border: 1px solid white; border-radius: 35px; color: white; width: 150px;" for="consentCheck">I consent. </button>
-              </div>
-            </div>
-            <div class="bottom-left-image">
-              <!-- <img src="images/left-image.png" alt="Decorative Image" > -->
-              </div>
+<div id="modalcontainer">
+  <div id="modalchild">
+    <div class="close-header">
+      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="background-color: transparent;">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <h2>Blakeley</h2>
+    <div class="color-options">
+      <span class="color-dot" style="background-color: black;"></span>
+      <span class="color-dot" style="background-color: #FF7BDA;"></span>
+      <span class="color-dot" style="background-color: #FF00FF;"></span>
+    </div>
+    <p>Oxblood Fade</p>
+    <div class="form-group">
+      <label for="widthSelect">AVAILABLE WIDTHS</label>
+      <select class="form-control" id="widthSelect">
+        <option>Medium</option>
+        <option>Large</option>
+        <option>Small</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea class="form-control" id="description" rows="3">Lorem\nLorem\nMedium</textarea>
+    </div>
+    <div class="button-group">
+      <button type="button" class="btn btn-outline-primary">Select lenses and buy</button>
+      <button type="button" class="btn btn-primary">Try at home for free</button>
+    </div>
+    <div class="view-details">
+      <a href="#">View full details</a>
+    </div>
+  </div>
+</div>
+  
+
           </div>
         </div>
       </div>
@@ -68,3 +91,4 @@
 </body>
 </html>
 </html>
+
